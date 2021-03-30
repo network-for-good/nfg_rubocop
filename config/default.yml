@@ -1,0 +1,30 @@
+AllCops:
+  NewCops: enable
+
+StringLiterals:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+# Commonly used screens these days easily fit more than 80 characters.
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+# Too short methods lead to extraction of single-use methods, which can make
+# the code easier to read (by naming things), but can also clutter the class
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 200
+
+# For spec blocks, they are supposed to be long, so specs
+# can be grouped. Only "it" blocks should be shorter
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context', 'shared_examples_for']

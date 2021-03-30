@@ -1,0 +1,37 @@
+require:
+  - rubocop-rspec
+  
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/MultipleDescribes:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 6
+
+# TDH I personally prefer the subject to be just above the block
+# that is using it, instead of above the let statements
+RSpec/LeadingSubject:
+  Enabled: false
+
+# There is a lot of debate about this on the PR that added it https://github.com/rubocop-hq/rubocop-rspec/issues/94
+# The problem is that it fails if the element being created in the let! statement is used in a
+# shared example. We often do this.
+RSpec/LetSetup:
+  Enabled: false
+
+# Not clear on why this is a code smell, so turning this off
+# Preferably, you can use a test double, but this is difficult
+# when you are looping through a set of objects
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/MultipleExpectations:
+  Max: 2
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
