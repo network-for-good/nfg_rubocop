@@ -1,28 +1,42 @@
-# NfgRubocop
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nfg_rubocop`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This repository contains the default rubocop configuration to be used across all Network for Good applicaions.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nfg_rubocop'
+gem 'nfg_rubocop', git: 'https://github.com/network-for-good/nfg_rubocop.git'
 ```
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install nfg_rubocop
-
 ## Usage
 
-TODO: Write usage instructions here
+Add/modify `.rubocop.yml` to your project with the following content:
+
+**For Ruby**
+```yaml
+inherit_gem:
+  nfg_rubocop: config/default.yml
+```
+
+**For Rails**
+```yaml
+inherit_gem:
+  nfg_rubocop:
+    - config/default.yml
+    - config/ext/rails.yml
+```
+
+**For RSpec**
+```yaml
+inherit_gem:
+  nfg_rubocop:
+    - config/default.yml
+    - config/ext/rspec.yml
+```
 
 ## Development
 

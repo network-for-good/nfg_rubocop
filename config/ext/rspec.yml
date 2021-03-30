@@ -1,3 +1,5 @@
+# For RSpec
+
 require:
   - rubocop-rspec
   
