@@ -2,40 +2,33 @@ This repository contains the default rubocop configuration to be used across all
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1. Remove the following lines (if any) from your applications's Gemfile:
+```yaml
+gem 'rubocop'
+gem 'rubocop-rails'
+gem 'rubocop-rspec'
+```
+
+2. Add this line to your application's Gemfile:
 
 ```ruby
 gem 'nfg_rubocop', git: 'https://github.com/network-for-good/nfg_rubocop.git'
 ```
 
-And then execute:
+3. Execute:
 
     $ bundle install
 
 ## Usage
 
-Add/modify `.rubocop.yml` to your project with the following content:
+Add `.rubocop.yml` to your project's root directory with the following content:
 
-**For Ruby**
-```yaml
-inherit_gem:
-  nfg_rubocop: config/default.yml
-```
-
-**For Rails**
 ```yaml
 inherit_gem:
   nfg_rubocop:
-    - config/default.yml
-    - config/ext/rails.yml
-```
-
-**For RSpec**
-```yaml
-inherit_gem:
-  nfg_rubocop:
-    - config/default.yml
-    - config/ext/rspec.yml
+    - config/default.yml    # for ruby cops
+    - config/ext/rails.yml  # for rails cops
+    - config/ext/rspec.yml  # for rspec cops
 ```
 
 ## Development
