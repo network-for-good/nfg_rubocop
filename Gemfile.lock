@@ -2,9 +2,9 @@ PATH
   remote: .
   specs:
     nfg_rubocop (0.1.0)
-      rubocop (~> 1.9.1)
-      rubocop-rails (~> 2.9.1)
-      rubocop-rspec (~> 2.2.0)
+      rubocop
+      rubocop-rails
+      rubocop-rspec
 
 GEM
   remote: https://rubygems.org/
