@@ -3,10 +3,10 @@
 AllCops:
   NewCops: enable
 
-StringLiterals:
+Style/StringLiterals:
   Enabled: false
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
 # Commonly used screens these days easily fit more than 80 characters.
