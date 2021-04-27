@@ -37,3 +37,7 @@ RSpec/MultipleExpectations:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 10
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/*
