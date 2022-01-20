@@ -33,3 +33,5 @@ Metrics/ClassLength:
 # can be grouped. Only "it" blocks should be shorter
 Metrics/BlockLength:
   IgnoredMethods: ['describe', 'context', 'shared_examples_for']
+  Exclude:
+    - spec/support/factories/*
