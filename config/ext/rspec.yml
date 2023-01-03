@@ -40,4 +40,4 @@ RSpec/MultipleMemoizedHelpers:
 
 RSpec/DescribeClass:
   Exclude:
-    - spec/features/*
+    - spec/features/**/*
