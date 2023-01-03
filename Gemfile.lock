@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nfg_rubocop (0.1.2)
+    nfg_rubocop (0.1.3)
       rubocop (~> 1.36.0)
       rubocop-rails
       rubocop-rspec

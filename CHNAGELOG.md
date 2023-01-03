@@ -18,3 +18,8 @@ All the significant changes to this gem will be documented in this file.
 ### Overview
 - Excludes DescribeClass warning for feature spec
 - Rubocop version `1.36.0`
+
+## 0.1.3 - 2023/01/03
+### Overview
+- `IgnoredMethods` has been renamed to `AllowedMethods` to fix obsolete parameter warning
+- Rubocop version `1.36.0`
