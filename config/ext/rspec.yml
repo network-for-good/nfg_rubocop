@@ -41,3 +41,6 @@ RSpec/MultipleMemoizedHelpers:
 RSpec/DescribeClass:
   Exclude:
     - spec/features/**/*
+
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: false
