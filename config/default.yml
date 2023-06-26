@@ -7,9 +7,12 @@ Bundler/OrderedGems:
   Enabled: false
 
 Style/StringLiterals:
-  Enabled: false
+  Enabled: true
 
 Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
   Enabled: false
 
 # Commonly used screens these days easily fit more than 80 characters.
@@ -27,7 +30,10 @@ Metrics/AbcSize:
   Max: 25
 
 Metrics/ClassLength:
-  Max: 200
+  Max: 1000
+
+Metrics/ModuleLength:
+  Max: 1000
 
 # For spec blocks, they are supposed to be long, so specs
 # can be grouped. Only "it" blocks should be shorter
