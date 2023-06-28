@@ -44,3 +44,5 @@ RSpec/DescribeClass:
 
 RSpec/FactoryBot/SyntaxMethods:
   Enabled: false
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false

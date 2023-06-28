@@ -2,3 +2,8 @@
 
 require:
   - rubocop-rails
+
+Rails/DotSeparatedKeys:
+  Enabled: false
+Rails/Delegate:
+  Enabled: false

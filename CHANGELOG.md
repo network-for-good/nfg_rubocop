@@ -23,3 +23,8 @@ All the significant changes to this gem will be documented in this file.
 ### Overview
 - `IgnoredMethods` has been renamed to `AllowedMethods` to fix obsolete parameter warning
 - Rubocop version `1.36.0`
+
+## 0.1.4 - 2023/06/28
+### Overview
+- Disabling these cops: Style/ClassAndModuleChildren, RSpec/FactoryBot/SyntaxMethods, Rails/DotSeparatedKeys, Rails/Delegate
+- Enabling these cops: Style/StringLiterals
