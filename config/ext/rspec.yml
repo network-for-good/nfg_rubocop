@@ -2,7 +2,7 @@
 
 require:
   - rubocop-rspec
-  
+
 RSpec/NamedSubject:
   Enabled: false
 
@@ -35,9 +35,6 @@ RSpec/ExampleLength:
 RSpec/MultipleExpectations:
   Max: 2
 
-RSpec/MultipleMemoizedHelpers:
-  Max: 10
-
 RSpec/DescribeClass:
   Exclude:
     - spec/features/**/*
@@ -45,4 +42,6 @@ RSpec/DescribeClass:
 RSpec/FactoryBot/SyntaxMethods:
   Enabled: false
 RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+RSpec/ExampleLength:
   Enabled: false

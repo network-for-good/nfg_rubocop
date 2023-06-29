@@ -26,5 +26,5 @@ All the significant changes to this gem will be documented in this file.
 
 ## 0.1.4 - 2023/06/28
 ### Overview
-- Disabling these cops: Style/ClassAndModuleChildren, RSpec/FactoryBot/SyntaxMethods, Rails/DotSeparatedKeys, Rails/Delegate
+- Disabling these cops: Style/ClassAndModuleChildren, RSpec/FactoryBot/SyntaxMethods, Rails/DotSeparatedKeys, Rails/Delegate, RSpec/ExampleLength
 - Enabling these cops: Style/StringLiterals
