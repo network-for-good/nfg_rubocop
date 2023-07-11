@@ -28,3 +28,9 @@ All the significant changes to this gem will be documented in this file.
 ### Overview
 - Disabling these cops: Style/ClassAndModuleChildren, RSpec/FactoryBot/SyntaxMethods, Rails/DotSeparatedKeys, Rails/Delegate, RSpec/ExampleLength
 - Enabling these cops: Style/StringLiterals
+
+## 0.1.5 - 2023/07/10
+### Overview
+- Disabling these cops: RSpec/FilePath, RSpec/DescribeMethod
+- Enabling these cops: Rails/DotSeparatedKeys
+- Also enforcing double quotes for StringLiterals

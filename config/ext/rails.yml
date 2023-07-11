@@ -4,6 +4,6 @@ require:
   - rubocop-rails
 
 Rails/DotSeparatedKeys:
-  Enabled: false
+  Enabled: true
 Rails/Delegate:
   Enabled: false
