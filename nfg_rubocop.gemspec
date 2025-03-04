@@ -27,6 +27,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  # ruby parser for syntax highlighting to be used in rubocops as rubocop currently does not support ruby 3.3
+  spec.add_dependency 'prism', '~> 1.3'
   spec.add_dependency 'rubocop', '~> 1.62.0'
   spec.add_dependency 'rubocop-rails'
   spec.add_dependency 'rubocop-rspec'
