@@ -39,8 +39,6 @@ RSpec/DescribeClass:
   Exclude:
     - spec/features/**/*
 
-RSpec/FactoryBot/SyntaxMethods:
-  Enabled: false
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 RSpec/ExampleLength:
